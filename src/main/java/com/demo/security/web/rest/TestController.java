@@ -1,4 +1,4 @@
-package com.demo.security.web.resources;
+package com.demo.security.web.rest;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;

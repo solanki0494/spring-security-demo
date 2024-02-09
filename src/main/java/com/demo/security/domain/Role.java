@@ -1,4 +1,4 @@
-package com.demo.security.user;
+package com.demo.security.domain;
 
 public enum Role {
     USER("ROLE_USER"), ADMIN("ROLE_ADMIN");

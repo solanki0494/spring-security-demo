@@ -1,6 +1,11 @@
 package com.demo.security.web.rest;
 
+import com.demo.security.configuration.jwt.JWTConfigurer;
+import com.demo.security.configuration.jwt.TokenProvider;
 import com.demo.security.web.rest.vm.LoginVM;
+import org.springframework.http.HttpHeaders;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
@@ -12,15 +17,18 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 @RequestMapping("api")
-public class UserController {
+public class UserAuthenticationController {
+
+    private final TokenProvider tokenProvider;
     private final AuthenticationManager authenticationManager;
 
-    public UserController(AuthenticationManager authenticationManager) {
+    public UserAuthenticationController(TokenProvider tokenProvider, AuthenticationManager authenticationManager) {
+        this.tokenProvider = tokenProvider;
         this.authenticationManager = authenticationManager;
     }
 
     @PostMapping("authenticate")
-    public boolean authorize(@RequestBody LoginVM loginVM) {
+    public ResponseEntity<?> authorize(@RequestBody LoginVM loginVM) {
 
         UsernamePasswordAuthenticationToken authenticationToken =
                 new UsernamePasswordAuthenticationToken(loginVM.getUsername(), loginVM.getPassword());
@@ -29,6 +37,9 @@ public class UserController {
         SecurityContextHolder.getContext().setAuthentication(authentication);
         boolean rememberMe = (loginVM.isRememberMe() == null) ? false : loginVM.isRememberMe();
 
-        return authentication.isAuthenticated();
+        String jwt = tokenProvider.createToken(authentication, rememberMe);
+        HttpHeaders httpHeaders = new HttpHeaders();
+        httpHeaders.add(JWTConfigurer.AUTHORIZATION_HEADER, "Bearer " + jwt);
+        return new ResponseEntity<>(jwt, httpHeaders, HttpStatus.OK);
     }
 }

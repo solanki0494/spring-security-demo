@@ -1,4 +1,4 @@
-package com.clone.instagram.common.security.jwt;
+package com.demo.security.configuration.jwt;
 
 import org.springframework.security.config.annotation.SecurityConfigurerAdapter;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;

@@ -1,4 +1,4 @@
-package com.demo.security.user;
+package com.demo.security.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
