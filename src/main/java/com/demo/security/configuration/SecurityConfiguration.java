@@ -25,6 +25,9 @@ public class SecurityConfiguration {
                 .antMatchers("/api/authenticate").permitAll()
                 .antMatchers(HttpMethod.POST, "/api/users").permitAll()
                 .antMatchers("/test/**").permitAll()
+                // Permit access to /api/categories and /api/products without authentication
+                .antMatchers("/api/categories/**", "/api/products/**").permitAll()
+
                 .anyRequest()
                 .authenticated()
                 .and()
