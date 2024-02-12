@@ -1,6 +1,5 @@
 package com.demo.security.web.rest;
 
-import com.demo.security.configuration.jwt.JWTConfigurer;
 import com.demo.security.configuration.jwt.TokenProvider;
 import com.demo.security.web.rest.vm.LoginVM;
 import org.springframework.http.HttpHeaders;
@@ -39,7 +38,7 @@ public class UserAuthenticationController {
 
         String jwt = tokenProvider.createToken(authentication, rememberMe);
         HttpHeaders httpHeaders = new HttpHeaders();
-        httpHeaders.add(JWTConfigurer.AUTHORIZATION_HEADER, "Bearer " + jwt);
+        httpHeaders.add("Authorization", "Bearer " + jwt);
         return new ResponseEntity<>(jwt, httpHeaders, HttpStatus.OK);
     }
 }
