@@ -5,29 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ebae388c-f1e9-42bc-bd35-e19e72974043" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/SpringSecurityDemoApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/SpringSecurityDemoApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/jwt/JWTConfigurer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/jwt/JWTFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/jwt/JWTFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/jwt/TokenProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/configuration/jwt/TokenProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/domain/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/domain/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/service/DomainUserDetailsService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/service/DomainUserDetailsService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/TestController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/TestController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/UserAuthenticationController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/UserAuthenticationController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/UserResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/UserResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/vm/LoginVM.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/vm/LoginVM.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/vm/SignUpRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/security/web/rest/vm/SignUpRequest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
